@@ -247,9 +247,9 @@ function App() {
             </p>
           </div>
 
-          <a href="https://drive.google.com/file/d/1vP_MQ4BMscS2PbZhvmvyaQaiD1pueeeH/view?usp=drive_link"></a><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
+          <a href="https://drive.google.com/file/d/1vP_MQ4BMscS2PbZhvmvyaQaiD1pueeeH/view?usp=drive_link"><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
             View Resume
-          </button>
+          </button></a>
 
           <p className="text-2xl text-gray-300 font-light animate-fade-in delay-700">
             A Love for Tech and Travel
