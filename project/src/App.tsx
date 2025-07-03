@@ -316,7 +316,7 @@ function App() {
                   </h3>
                   <p className="text-gray-400">
                     Supervised,Unsupervised,DeepLearning,TensorFlow,
-                    Scikit-learn,Keras, Neural Networks
+                    Scikit-learn,Keras,OpenCV, Neural Networks
                   </p>
                 </div>
 
