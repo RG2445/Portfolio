@@ -100,10 +100,10 @@ function App() {
     },
 
     {
-      title: "SmartFinance",
+      title: "Portfolio",
       description:
-        "Personal finance management platform with AI-powered expense categorization, budget optimization, and investment recommendations using natural language processing.",
-      link: "#",
+        "A responsive portfolio website built using React to showcase my projects, skills, and resume in a modern, interactive interface. It highlights my technical journey with clean design, smooth navigation, and live project demos.",
+      link: "https://github.com/RG2445/Portfolio",
     },
   ];
 
