@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import ProfileImage from "./assets/image/WhatsApp Image 2025-06-15 at 16.48.44_a0c03585.jpg";
+import ProfileImage from "./assets/image/profile.txt";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
