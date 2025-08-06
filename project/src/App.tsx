@@ -34,21 +34,18 @@ function App() {
     };
 
     const animateCursor = () => {
-      // Smooth interpolation for main cursor (faster)
       const lerpFactor = 0.15;
       currentPos.current.x +=
         (mousePos.current.x - currentPos.current.x) * lerpFactor;
       currentPos.current.y +=
         (mousePos.current.y - currentPos.current.y) * lerpFactor;
 
-      // Smooth interpolation for trail (slower)
       const trailLerpFactor = 0.08;
       trailPos.current.x +=
         (mousePos.current.x - trailPos.current.x) * trailLerpFactor;
       trailPos.current.y +=
         (mousePos.current.y - trailPos.current.y) * trailLerpFactor;
 
-      // Update cursor positions directly via transform for maximum performance
       if (cursorRef.current) {
         cursorRef.current.style.transform = `translate3d(${
           currentPos.current.x - 12
@@ -89,21 +86,26 @@ function App() {
     {
       title: "Attendance-Management-System",
       description:
-        " A web-based Attendance Management System that allows teachers to mark and track student attendance efficiently.Students can view their attendance statistics in real-time through a user-friendly dashboard.",
+        "A web-based Attendance Management System that allows teachers to mark and track student attendance efficiently. Students can view their attendance statistics in real-time through a user-friendly dashboard.",
       link: "https://github.com/RG2445/College-Attendance-Record",
     },
     {
       title: "Chat-Bot",
       description:
-        "An intelligent chatbot built to simulate human-like conversations and assist users with queries in real-time.Integrated with NLP and customizable flows to enhance user engagement across web platforms.",
+        "An intelligent chatbot built to simulate human-like conversations and assist users with queries in real-time. Integrated with NLP and customizable flows to enhance user engagement across web platforms.",
       link: "https://github.com/RG2445/Chatbot",
     },
-
     {
       title: "Portfolio",
       description:
         "A responsive portfolio website built using React to showcase my projects, skills, and resume in a modern, interactive interface. It highlights my technical journey with clean design, smooth navigation, and live project demos.",
       link: "https://github.com/RG2445/Portfolio",
+    },
+    {
+      title: "Stock Prediction",
+      description:
+        "A machine learning project for forecasting stock prices using Markov modeling and deep learning techniques (TensorFlow, scikit-learn, etc.). Experimented with time series, feature engineering, and multiple ML approaches for robust predictions.",
+      link: "https://github.com/RG2445/Stock_Prediction",
     },
   ];
 
@@ -131,7 +133,6 @@ function App() {
       <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
         <div className="bg-black/80 backdrop-blur-md rounded-full px-8 py-4 border border-gray-700">
           <div className="flex items-center space-x-8">
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               {[
                 { id: "home", label: "Home" },
@@ -154,7 +155,6 @@ function App() {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -189,7 +189,6 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-2 bg-black/80 backdrop-blur-md rounded-2xl border border-gray-700 p-4">
             <div className="space-y-2">
@@ -247,7 +246,7 @@ function App() {
             </p>
           </div>
 
-          <a href="https://drive.google.com/file/d/1vP_MQ4BMscS2PbZhvmvyaQaiD1pueeeH/view?usp=drive_link"><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
+          <a href="https://drive.google.com/file/d/1zLIMg8wg_dIPAhD7hGNp8RipBR8_tDy2/view?usp=drive_link"><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
             View Resume
           </button></a>
 
@@ -292,34 +291,30 @@ function App() {
                     Frontend
                   </h3>
                   <p className="text-gray-400">
-                    HTML,CSS,Javascript,React.js, Figma
+                    HTML, CSS, Javascript, React.js, Figma
                   </p>
                 </div>
-
                 <div className="group">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-green-400 transition-colors duration-200">
                     Backend
                   </h3>
                   <p className="text-gray-400">Express.JS, Node.JS, Firebase</p>
                 </div>
-
                 <div className="group">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-purple-400 transition-colors duration-200">
                     Database
                   </h3>
                   <p className="text-gray-400">MongoDB, MySQL, PostgreSQL</p>
                 </div>
-
                 <div className="group">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-orange-400 transition-colors duration-200">
                     Machine Learning
                   </h3>
                   <p className="text-gray-400">
-                    Supervised,Unsupervised,DeepLearning,TensorFlow,
-                    Scikit-learn,Keras,OpenCV, Neural Networks
+                    Supervised, Unsupervised, Deep Learning, TensorFlow,
+                    Scikit-learn, Keras, OpenCV, Neural Networks, Markov Models
                   </p>
                 </div>
-
                 <div className="group">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-pink-400 transition-colors duration-200">
                     Generative AI
@@ -327,6 +322,14 @@ function App() {
                   <p className="text-gray-400">
                     Natural Language Processing (NLP), Large Language Models
                     (LLMs), Langchain
+                  </p>
+                </div>
+                <div className="group">
+                  <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors duration-200">
+                    Browser Automation & Workflows
+                  </h3>
+                  <p className="text-gray-400">
+                    Playwright (browser automation & testing), n8n (workflow automation),Browser-Use
                   </p>
                 </div>
               </div>
@@ -347,8 +350,6 @@ function App() {
             </h2>
             <div className="absolute top-1/3 left-1/4 w-6 h-6 bg-white rounded-full opacity-40 animate-pulse"></div>
           </div>
-
-          {/* Infinite Scrolling Projects */}
           <div
             className="relative overflow-hidden"
             onMouseEnter={() => setIsProjectsHovered(true)}
@@ -359,7 +360,6 @@ function App() {
                 isProjectsHovered ? "" : "animate-scroll-right"
               }`}
             >
-              {/* First set of projects */}
               {projects.map((project, index) => (
                 <div
                   key={`first-${index}`}
@@ -371,7 +371,7 @@ function App() {
                   <p className="text-gray-300 leading-relaxed mb-8 text-sm">
                     {project.description}
                   </p>
-                  <a href="">
+                  <a href={project.link}>
                     <button className="bg-transparent border border-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 hover:border-white transition-all duration-200 flex items-center group-hover:scale-105">
                       Learn More
                       <svg
@@ -390,7 +390,6 @@ function App() {
                   </a>
                 </div>
               ))}
-              {/* Duplicate set for seamless loop */}
               {projects.map((project, index) => (
                 <div
                   key={`second-${index}`}
@@ -402,7 +401,7 @@ function App() {
                   <p className="text-gray-300 leading-relaxed mb-8 text-sm">
                     {project.description}
                   </p>
-                  <a href="">
+                  <a href={project.link}>
                     <button className="bg-transparent border border-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 hover:border-white transition-all duration-200 flex items-center group-hover:scale-105">
                       Learn More
                       <svg
