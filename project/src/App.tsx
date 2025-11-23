@@ -246,7 +246,7 @@ function App() {
             </p>
           </div>
 
-          <a href="https://drive.google.com/file/d/1zLIMg8wg_dIPAhD7hGNp8RipBR8_tDy2/view?usp=drive_link"><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
+          <a href="https://drive.google.com/file/d/1yn9Ssuc8OoTSnmja05TOScynvqVDdXPm/view?usp=sharing"><button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 hover:scale-105 transition-all duration-200 mb-12 animate-fade-in delay-500">
             View Resume
           </button></a>
 
